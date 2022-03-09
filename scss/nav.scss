@@ -1,0 +1,36 @@
+// the styling for the nav
+nav {
+  width: 100vw;
+  height: 70px;
+  background-color: #d9bba9;
+  display: flex;
+  position: fixed;
+  z-index: 3;
+  justify-content: space-between;
+
+  //   the company name
+  h1 {
+    color: #4a5159;
+    font-family: hoefler;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 15px;
+    position: relative;
+    left: 15px;
+  }
+  //   all the links for the nav
+  .nav-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 500px;
+    padding-right: 15px;
+    a {
+      font-size: 24px;
+      text-decoration: none;
+      color: #4a5159;
+      padding-top: 20px;
+    }
+  }
+}

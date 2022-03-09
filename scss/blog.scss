@@ -1,0 +1,47 @@
+// all the styling for the blog page here
+.blog {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 90px;
+  background-color: #f1f2e9;
+
+  .blog-text {
+    margin: 0 auto;
+    font-size: 50px;
+    height: 50px;
+    width: 375px;
+    font-weight: bold;
+    color: #012340;
+  }
+  .sub-header {
+    margin: 0 auto;
+    font-size: 24px;
+    height: 50px;
+    width: 340px;
+    color: #012340;
+  }
+  //   the container that holds the blog imgs and sub-header
+  .blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    .blog-icon {
+      width: 300px;
+      height: 300px;
+
+      .blog-img {
+        width: 300px;
+        height: 200px;
+        border-radius: 30px;
+      }
+      .blog-txt {
+        height: 60px;
+        width: 284px;
+        font-size: 20px;
+        margin-top: 30px;
+      }
+    }
+  }
+}

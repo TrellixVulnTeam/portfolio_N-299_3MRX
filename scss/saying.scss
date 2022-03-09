@@ -1,0 +1,30 @@
+// this is the company saying subsection
+.saying {
+  height: 250px;
+  width: 100vw;
+  position: static;
+  padding: 50px;
+  background-color: #f1f2e9;
+  //   each saying is represented by its position correlating which one it is
+  .top-saying {
+    font-size: 50px;
+    font-family: hoefler;
+    height: 50px;
+    width: 300px;
+    margin: 0 auto 0 25vw;
+  }
+  .mid-saying {
+    font-size: 50px;
+    font-family: hoefler;
+    height: 50px;
+    width: 200px;
+    margin: 0 auto;
+  }
+  .btm-saying {
+    font-size: 50px;
+    font-family: hoefler;
+    height: 50px;
+    width: 300px;
+    margin: 0 25vw 0 auto;
+  }
+}

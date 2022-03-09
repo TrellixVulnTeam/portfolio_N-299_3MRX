@@ -1,0 +1,37 @@
+// the styling for the review subsection
+.review {
+  height: 300px;
+  width: 100vw;
+  background-color: #659aa6;
+
+  .review-title {
+    height: 35px;
+    width: 150px;
+    margin-left: 50px;
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+  //   the container that holds each review
+  .review-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 140px;
+    margin-top: 40px;
+    // the container that holds the name and review the customer gave
+    .reviews {
+      width: 205px;
+      height: 130px;
+      p {
+        font-size: 20px;
+      }
+      .name {
+        color: #d9bba9;
+        font-size: 20px;
+      }
+    }
+  }
+}

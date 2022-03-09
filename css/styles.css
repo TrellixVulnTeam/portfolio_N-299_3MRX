@@ -1,0 +1,410 @@
+@font-face {
+  font-family: hoefler;
+  src: url(fonts/hoefler-text-regular.ttf); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  height: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+  font-family: hoefler; }
+
+nav {
+  width: 100vw;
+  height: 70px;
+  background-color: #d9bba9;
+  display: flex;
+  position: fixed;
+  z-index: 3;
+  justify-content: space-between; }
+  nav h1 {
+    color: #4a5159;
+    font-family: hoefler;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 15px;
+    position: relative;
+    left: 15px; }
+  nav .nav-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 500px;
+    padding-right: 15px; }
+    nav .nav-cont a {
+      font-size: 24px;
+      text-decoration: none;
+      color: #4a5159;
+      padding-top: 20px; }
+
+footer {
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #012340;
+  position: absolute; }
+  footer h1 {
+    font-family: hoefler;
+    font-size: 50px;
+    margin: 15px auto;
+    position: absolute;
+    color: #d9bba9; }
+  footer .foot-container {
+    height: 125px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 95px auto; }
+    footer .foot-container p {
+      font-family: hoefler;
+      font-size: 24px;
+      padding-bottom: 20px;
+      margin: 0 auto;
+      color: #d9bba9; }
+  footer .socials-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    height: 32px;
+    width: 120px;
+    margin: 0 auto; }
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right, rgba(7, 7, 7, 0.4), rgba(7, 7, 7, 0.4)), url(../images/elscoot-hero.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  z-index: 0; }
+  .home .container {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 30px; }
+    .home .container .small-circle {
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      margin-left: 250px;
+      margin-top: 250px;
+      background-color: #659aa6;
+      border-radius: 50%;
+      z-index: 1;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly; }
+      .home .container .small-circle .home-saying {
+        margin: 10px -20px 0 auto;
+        font-family: hoefler;
+        width: 220px;
+        height: 100;
+        font-size: 22px;
+        color: #d9bba9; }
+    .home .container .big-circle {
+      border-radius: 50%;
+      background-color: #d9bba9;
+      width: 350px;
+      height: 350px;
+      z-index: 2;
+      align-items: center; }
+      .home .container .big-circle .rove {
+        font-weight: bold;
+        margin: 120px 100px 0 auto;
+        font-size: 50px;
+        height: 50px;
+        width: 200px;
+        font-family: hoefler;
+        color: #4a5159; }
+      .home .container .big-circle .scooter {
+        font-weight: bold;
+        margin: 0 110px 0 auto;
+        font-size: 50px;
+        height: 50px;
+        width: 200px;
+        font-family: hoefler;
+        color: #4a5159; }
+
+.saying {
+  height: 250px;
+  width: 100vw;
+  position: static;
+  padding: 50px;
+  background-color: #f1f2e9; }
+  .saying .top-saying {
+    font-size: 50px;
+    font-family: hoefler;
+    height: 50px;
+    width: 300px;
+    margin: 0 auto 0 25vw; }
+  .saying .mid-saying {
+    font-size: 50px;
+    font-family: hoefler;
+    height: 50px;
+    width: 200px;
+    margin: 0 auto; }
+  .saying .btm-saying {
+    font-size: 50px;
+    font-family: hoefler;
+    height: 50px;
+    width: 300px;
+    margin: 0 25vw 0 auto; }
+
+.products {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  padding-top: 70px; }
+  .products .product-title {
+    font-size: 50px;
+    margin-left: 150px;
+    height: 50px;
+    width: 425px;
+    font-weight: bold; }
+  .products .ride-container {
+    width: 100vw;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-evenly; }
+    .products .ride-container .holder {
+      width: 250px;
+      height: 450px;
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+      padding-top: 30px;
+      border-radius: 25px; }
+      .products .ride-container .holder .img-style {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        border-radius: 15px; }
+      .products .ride-container .holder p {
+        margin: 0 auto;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+      .products .ride-container .holder .line {
+        height: 3px;
+        width: 170px;
+        background-color: black;
+        margin: -50px auto; }
+      .products .ride-container .holder .price {
+        margin: -70px auto;
+        color: #659aa6; }
+      .products .ride-container .holder .cart {
+        margin: -70px auto;
+        width: 115px;
+        height: 30px;
+        background-color: #012340;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #d9bba9; }
+
+.review {
+  height: 300px;
+  width: 100vw;
+  background-color: #659aa6; }
+  .review .review-title {
+    height: 35px;
+    width: 150px;
+    margin-left: 50px;
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 20px; }
+  .review .review-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 140px;
+    margin-top: 40px; }
+    .review .review-container .reviews {
+      width: 205px;
+      height: 130px; }
+      .review .review-container .reviews p {
+        font-size: 20px; }
+      .review .review-container .reviews .name {
+        color: #d9bba9;
+        font-size: 20px; }
+
+.about {
+  height: 103vh;
+  width: 100vw;
+  margin-top: 20px;
+  padding-top: 80px; }
+  .about .about-title {
+    font-size: 50px;
+    margin-left: 150px;
+    height: 50px;
+    width: 625px;
+    font-weight: bold;
+    color: #012340; }
+  .about .text-container {
+    width: 90%;
+    height: 270px;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto); }
+    .about .text-container p {
+      font-size: 20px;
+      width: 700px; }
+    .about .text-container .txt-img {
+      background-color: yellow;
+      width: 330px;
+      height: 240px;
+      margin-top: -50px; }
+  .about .abt-container {
+    width: 90%;
+    height: 250px;
+    margin: -100px auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto); }
+    .about .abt-container .txt-img2 {
+      background-color: yellow;
+      width: 660px;
+      height: 250px; }
+    .about .abt-container .txt-img3 {
+      background-color: yellow;
+      width: 375px;
+      height: 250px; }
+
+.creators {
+  height: 300px;
+  width: 100vw;
+  background-color: #f1f2e9; }
+  .creators .creator-title {
+    height: 35px;
+    width: 150px;
+    margin-left: 50px;
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: #012340; }
+  .creators .profile-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding-top: 30px;
+    align-items: center;
+    justify-content: space-evenly; }
+    .creators .profile-container .profile {
+      width: 527px;
+      height: 150px;
+      display: grid;
+      grid-template-columns: repeat(2, auto); }
+      .creators .profile-container .profile .img-profile {
+        width: 225px;
+        height: 150px;
+        border-radius: 40px; }
+      .creators .profile-container .profile p {
+        width: 277px;
+        height: 150px;
+        font-size: 18px;
+        padding-top: 40px;
+        padding-left: 25px; }
+
+.rides {
+  height: 100vh;
+  width: 100vw;
+  background-color: #012340;
+  padding-top: 20px; }
+  .rides .ride-text {
+    margin: 0 auto;
+    font-size: 50px;
+    height: 50px;
+    width: 400px;
+    font-weight: bold;
+    color: #d9bba9; }
+  .rides .hashtag {
+    margin: 0 auto;
+    font-size: 50px;
+    height: 50px;
+    width: 225px;
+    font-weight: bold;
+    font-style: italic;
+    color: #d9bba9; }
+  .rides .img-container {
+    width: 900px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    align-items: center;
+    margin: 20px auto; }
+    .rides .img-container .top-img {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      align-items: center;
+      justify-content: space-evenly; }
+      .rides .img-container .top-img .social-img {
+        width: 250px;
+        height: 160px; }
+    .rides .img-container .btm-img {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      align-items: center;
+      justify-content: space-evenly; }
+      .rides .img-container .btm-img .social-img2 {
+        width: 530px;
+        height: 270px; }
+      .rides .img-container .btm-img .social-img3 {
+        width: 270px;
+        height: 270px; }
+
+.blog {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 90px;
+  background-color: #f1f2e9; }
+  .blog .blog-text {
+    margin: 0 auto;
+    font-size: 50px;
+    height: 50px;
+    width: 375px;
+    font-weight: bold;
+    color: #012340; }
+  .blog .sub-header {
+    margin: 0 auto;
+    font-size: 24px;
+    height: 50px;
+    width: 340px;
+    color: #012340; }
+  .blog .blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 60px; }
+    .blog .blog-container .blog-icon {
+      width: 300px;
+      height: 300px; }
+      .blog .blog-container .blog-icon .blog-img {
+        width: 300px;
+        height: 200px;
+        border-radius: 30px; }
+      .blog .blog-container .blog-icon .blog-txt {
+        height: 60px;
+        width: 284px;
+        font-size: 20px;
+        margin-top: 30px; }

@@ -1,0 +1,43 @@
+// the styling for the footer section
+footer {
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  //   align-items: center;
+  justify-content: space-evenly;
+  background-color: #012340;
+  position: absolute;
+
+  h1 {
+    font-family: hoefler;
+    font-size: 50px;
+    margin: 15px auto;
+    position: absolute;
+    color: #d9bba9;
+  }
+  .foot-container {
+    height: 125px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 95px auto;
+
+    p {
+      font-family: hoefler;
+      font-size: 24px;
+      padding-bottom: 20px;
+      margin: 0 auto;
+      color: #d9bba9;
+    }
+  }
+  // container that holds the social media icons
+  .socials-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    height: 32px;
+    width: 120px;
+    margin: 0 auto;
+  }
+}

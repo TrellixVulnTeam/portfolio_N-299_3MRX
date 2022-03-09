@@ -1,0 +1,82 @@
+// the styling for the home page
+.home {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+      to right,
+      rgba(7, 7, 7, 0.4),
+      rgba(7, 7, 7, 0.4)
+    ),
+    url(../images/elscoot-hero.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+
+  z-index: 0;
+
+  .container {
+    width: 600px;
+    height: 600px;
+    display: flex;
+
+    position: relative;
+    margin-top: 100px;
+    margin-left: 30px;
+    // the styling for the blue bubble
+    .small-circle {
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      margin-left: 250px;
+      margin-top: 250px;
+      background-color: #659aa6;
+      border-radius: 50%;
+      z-index: 1;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      .home-saying {
+        margin: 10px -20px 0 auto;
+        font-family: hoefler;
+        width: 220px;
+        height: 100;
+        font-size: 22px;
+        color: #d9bba9;
+      }
+    }
+    // the styling for the tan circle
+    .big-circle {
+      border-radius: 50%;
+      background-color: #d9bba9;
+      width: 350px;
+      height: 350px;
+      z-index: 2;
+      //   display: grid;
+      //   grid-template-columns: repeat(1, auto);
+      align-items: center;
+      //   justify-content: space-around;
+
+      .rove {
+        font-weight: bold;
+        margin: 120px 100px 0 auto;
+        font-size: 50px;
+        height: 50px;
+        width: 200px;
+        font-family: hoefler;
+        color: #4a5159;
+      }
+      .scooter {
+        font-weight: bold;
+        margin: 0 110px 0 auto;
+        font-size: 50px;
+        height: 50px;
+        width: 200px;
+        font-family: hoefler;
+        color: #4a5159;
+      }
+    }
+  }
+}

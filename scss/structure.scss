@@ -1,0 +1,26 @@
+// this contains the basic css structure used in html
+@font-face {
+  font-family: hoefler;
+  src: url(fonts/hoefler-text-regular.ttf);
+}
+// basic css styling structure for web
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+  //   adding the main font to everything
+  font-family: hoefler;
+}

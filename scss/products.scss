@@ -1,0 +1,67 @@
+// the styling for the products section
+.products {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  padding-top: 70px;
+  .product-title {
+    font-size: 50px;
+    margin-left: 150px;
+    height: 50px;
+    width: 425px;
+    font-weight: bold;
+  }
+  //   parent div to the item holders
+  .ride-container {
+    width: 100vw;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    // the div styling that holds all the pieces to each product
+    .holder {
+      width: 250px;
+      height: 450px;
+      //   background-color: #c4c4c4;
+      display: grid;
+      grid-template-columns: repeat(1, auto);
+      padding-top: 30px;
+      border-radius: 25px;
+
+      .img-style {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        border-radius: 15px;
+      }
+      p {
+        margin: 0 auto;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .line {
+        height: 3px;
+        width: 170px;
+        background-color: black;
+        margin: -50px auto;
+      }
+      .price {
+        margin: -70px auto;
+        color: #659aa6;
+      }
+      .cart {
+        margin: -70px auto;
+        width: 115px;
+        height: 30px;
+        background-color: #012340;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #d9bba9;
+      }
+    }
+  }
+}
